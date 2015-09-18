@@ -1,7 +1,6 @@
 var data=require('./crew');
 var request = require('request');
 var cheerio = require('cheerio');
-​
 data.areaurl(function(areaarr){
 	data.movieurl(function(moviearr){
 		var dataurl=(moviearr+areaarr);
@@ -21,13 +20,11 @@ data.areaurl(function(areaarr){
 		})  
 	}); 
 });
-​
 // request("http://www.atmovies.com.tw/showtime/ften46387976/a03/", function (error, response, body) {
 //        // console.log(movieurl);
 //        if(!error){
 //        	$ = cheerio.load(body);
 //        	var alldata = $('#header').text();  
 //        	console.log(alldata);
-​
 //        }
 //    })  
